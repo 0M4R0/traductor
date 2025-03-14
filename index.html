@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Translator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Translator</h1>
+            <div class="select-container">
+                <div>
+                    <label for="source-language">Idioma Origen:</label>
+                    <select id="source-language" title="Idioma Origen">
+                        <option value="es" selected>Español</option>
+                        <option value="en">Inglés</option>
+                        <option value="fr">Francés</option>
+                        <option value="de">Alemán</option>
+                    </select>
+                </div>
+                <button id="switch-language" class="switch-button" title="Intercambiar idiomas">Switch</button>
+                <div>
+                    <label for="target-language">Idioma Destino:</label>
+                    <select id="target-language" title="Idioma Destino">
+                        <option value="en" selected>Inglés</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Francés</option>
+                        <option value="de">Alemán</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="input-header">
+                    <label for="input-text">Escribe el texto:</label>
+                    <button id="clear-text" title="Eliminar traducción">X</button>
+                </div>
+                <textarea id="input-text" placeholder="Escribe aquí..."></textarea>
+            </div>
+            <div class="translation-container">
+                <label for="translated-text">Traducción:</label>
+                <textarea id="translated-text" readonly placeholder="La traducción aparecerá aquí..."></textarea>
+                <button id="copy-text" class="copy-button" title="Copiar traducción">Copiar</button>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
